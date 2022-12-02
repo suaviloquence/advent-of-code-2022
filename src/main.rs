@@ -1,7 +1,7 @@
+use days::{second::Second, Solution};
+
 mod days;
 
 fn main() {
-	for i in 1..=2 {
-		days::first::run(i);
-	}
+	Second::run()
 }
