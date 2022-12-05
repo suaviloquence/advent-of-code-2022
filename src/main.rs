@@ -1,7 +1,7 @@
-use days::{second::Second, Solution};
+use days::Solution;
 
 mod days;
 
 fn main() {
-	Second::run()
+	days::fifth::Fifth::print()
 }

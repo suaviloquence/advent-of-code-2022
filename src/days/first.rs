@@ -5,8 +5,8 @@ static INPUT: &str = include_str!("../../input/1");
 struct First;
 
 impl Solution for First {
-	fn run_one() {
-		let mut max = None::<i32>;
+	fn run_one() -> i32 {
+		let mut max = None;
 		let mut total = 0;
 
 		for line in INPUT.lines() {
@@ -18,13 +18,13 @@ impl Solution for First {
 			}
 		}
 
-		println!("{}", max.unwrap_or_default());
+		max.unwrap_or_default()
 	}
 
-	fn run_two() {
+	fn run_two() -> i32 {
 		let mut vec = Vec::new();
 
-		let mut total = 0i32;
+		let mut total = 0;
 
 		for line in INPUT.lines() {
 			if line.is_empty() {
@@ -37,6 +37,6 @@ impl Solution for First {
 
 		vec.sort();
 
-		println!("{}", vec.into_iter().rev().take(3).sum::<i32>());
+		vec.into_iter().rev().take(3).sum::<i32>()
 	}
 }
