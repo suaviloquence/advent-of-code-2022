@@ -1,12 +1,17 @@
+use std::fmt::Display;
+
 pub mod fifth;
 pub mod first;
 pub mod fourth;
 pub mod second;
+pub mod sixth;
 pub mod third;
 
 pub trait Solution {
-	fn run_one() -> i32;
-	fn run_two() -> i32;
+	type Disp: Display;
+
+	fn run_one() -> Self::Disp;
+	fn run_two() -> Self::Disp;
 
 	fn print() {
 		println!("{}", Self::run_one());

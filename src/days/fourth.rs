@@ -4,6 +4,8 @@ static INPUT: &str = include_str!("../../input/4");
 pub struct Fourth;
 
 impl Solution for Fourth {
+	type Disp = i32;
+
 	fn run_one() -> i32 {
 		let mut n = 0;
 		for line in INPUT.lines() {

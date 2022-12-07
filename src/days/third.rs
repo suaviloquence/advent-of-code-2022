@@ -66,4 +66,6 @@ impl Solution for Third {
 
 		sum
 	}
+
+	type Disp = i32;
 }

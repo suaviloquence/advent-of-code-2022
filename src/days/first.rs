@@ -5,6 +5,8 @@ static INPUT: &str = include_str!("../../input/1");
 struct First;
 
 impl Solution for First {
+	type Disp = i32;
+
 	fn run_one() -> i32 {
 		let mut max = None;
 		let mut total = 0;

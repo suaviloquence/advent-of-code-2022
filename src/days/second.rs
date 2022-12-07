@@ -5,6 +5,8 @@ static INPUT: &str = include_str!("../../input/2");
 pub struct Second;
 
 impl Solution for Second {
+	type Disp = i32;
+
 	fn run_one() -> i32 {
 		let mut score = 0;
 
